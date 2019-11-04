@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 html,body {
@@ -9,7 +10,19 @@ html,body {
 }
 
 #show-program {
-    background-color: #5b1a04
+    background-color: #5b1a04;
+    color: #ffd8ad;
+
+}
+
+h1 {
+    color:  #5b1a04;
+}
+
+h3 {
+    color: white;
+    padding: 10px;
+
 }
 
 body {
@@ -22,7 +35,7 @@ header{
 }
 
 #logo a {
-	margin-left: 20px;
+   	margin-left: 20px;
 	float: left;
 }
 
@@ -45,47 +58,33 @@ nav li a {
 }
 
 nav li a:hover {
-	color: gold;
+	color:#ffd8ad;
 }
 
 main {
 text-align: left;
 }
 
-#home {
-	font-size: 30px;
-	height:350px;
-	margin: 1px 1px 1px 1px;
-	padding: 30px;
-}
-
-#photo-new-year-2019 {
-	border-top-style: none;
-	line-height: 1.5;
+#photo-ny-2019 {
 	padding: 30px;
 }
 
 #new-year-2020 {
-	border-top-style: solid;
-	line-height: 1.5;
-	padding: 30px;
+    padding: 30px;
 }
 
 #show-program {
-	border-top-style: none;
-    line-height: 1.5;
-	padding: 30px;
-    font-variant: small-caps;
+    padding: 30px;
 }
 
 #price {
-	border-top-style: solid;
-	line-height: 1.5;
 	padding: 30px;
 }
 
-#contacts {
-	border-top-style: solid;
-	line-height: 1.5;
-	padding: 30px;
+#form {
+    background-color: #5b1a04
+}
+
+#footer {
+    background-color: #5b1a04
 }
