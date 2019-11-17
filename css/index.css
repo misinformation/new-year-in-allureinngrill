@@ -106,4 +106,113 @@ h1 {
     color: var(--main-color);
     display: flex;
     justify-content: center;
+    margin: 20px;
+}
+
+h1:hover {
+    color: var(--accent-color);
+}
+
+/*галерея*/
+main #gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/*текст + картинка */
+main article .text-and-photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+main article .image-left-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-height: 250px;
+        margin: 30px;      
+}
+
+
+@media (min-width: 700px) {
+    main #new-year-2020 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center; /*поміняти flex-end*/
+
+    }
+
+    main article .text-and-photo {
+        flex-grow: 2; 
+  
+        justify-content: flex-start;
+        text-align: left;
+        margin-top: 0;
+        
+       
+    }
+
+    main article .text-and-photo h1 {
+        text-align: left;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    
+
+    main article .image-left-text {
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-right: 0; /*можна забрати*/
+       
+  
+    }  
+}
+
+
+
+
+/*банер під годинник */
+main .banner-countdown-timer {
+    background-image: url(../img/happy-new-year-celebration.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+main .banner-countdown-timer h3 {
+    font-family: 'Oranienbaum', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    align-self: center;
+    margin-top: 0px;
+    margin-left: 50px;
+    width: 20%;
+}
+
+@media (min-width: 550px) {
+    main .banner-countdown-timer {
+        display: flex;
+        min-height: 500px;
+    }
+
+    main .banner-countdown-timer h3 {
+        font-size: 1.3rem;
+        width: 30%;
+    }
 }
