@@ -123,6 +123,11 @@ main #gallery {
 
 
 /*текст + картинка */
+main .article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main article .text-and-photo {
         display: flex;
         flex-direction: column;
@@ -136,13 +141,22 @@ main article .image-left-text {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        max-height: 250px;
-        margin: 30px;      
+        max-height: 250px;  
 }
 
 
+
+main #hurry-up {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+
+
 @media (min-width: 700px) {
-    main #new-year-2020 {
+    main article {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -152,7 +166,6 @@ main article .image-left-text {
 
     main article .text-and-photo {
         flex-grow: 2; 
-  
         justify-content: flex-start;
         text-align: left;
         margin-top: 0;
@@ -166,8 +179,6 @@ main article .image-left-text {
         margin-left: 0;
     }
 
-    
-
     main article .image-left-text {
         justify-content: flex-start;
         margin-top: 0;
@@ -177,17 +188,45 @@ main article .image-left-text {
     }  
 }
 
+/*блок "чому обрати"*/
+main #show-program {
+    background-color: var(--main-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main #show-program h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--accent-color);
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+main #show-program h3:hover {
+    color: white;
+}
+
+main #show-program li {
+    display: flex;
+    color: white;
+    padding-top: 1em;
+  
+}
 
 
 
-/*банер під годинник */
+/*банер під годинник*/
 main .banner-countdown-timer {
     background-image: url(../img/happy-new-year-celebration.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     min-height: 200px;
     margin-top: 10px;
@@ -216,3 +255,37 @@ main .banner-countdown-timer h3 {
         width: 30%;
     }
 }
+
+
+/*контакти*/
+footer #contacts .container .contact-information {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+footer #contacts .container .contact-information h4 {
+    color: var(--main-color);
+}
+
+footer #contacts .container .contact-information .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media (min-width: 550px) {
+    footer #contacts .container {
+        display: flex;
+        justify-content: space-around;
+    }    
+
+    footer #contacts .container .contact-information {
+        flex-direction: column;
+    }
+}
+
+
