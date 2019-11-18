@@ -204,6 +204,7 @@ main #show-program h3 {
     margin-left: 45px;
     margin-right: 45px;
     margin-top: 10px;
+    font-weight: normal;
 }
 
 main #show-program h3:hover {
@@ -214,6 +215,7 @@ main #show-program li {
     display: flex;
     color: white;
     padding-top: 1em;
+    margin-right: 20px;
   
 }
 
@@ -270,12 +272,14 @@ footer #contacts .container .contact-information h4 {
     color: var(--main-color);
 }
 
+footer #contacts .container .contact-information h4:hover {
+    color: var(--accent-color);
+}
+
 footer #contacts .container .contact-information .icon img {
     width: 30px;
     height: 30px;
 }
-
-
 
 @media (min-width: 550px) {
     footer #contacts .container {
