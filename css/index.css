@@ -63,6 +63,7 @@ header nav .menu li {
     }
 }
 
+/*банер*/
 header .banner {
     background-image: url(../img/couple-celebrating-new-year.jpg);
     background-position: center;
@@ -113,80 +114,131 @@ h1:hover {
     color: var(--accent-color);
 }
 
+/*ЗРОБИТИ СТИЛЬ
+hr {
+
+}
+*/
+
+
 /*галерея*/
 main #gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;;
+    margin: 0;
+}
+
+main #gallery img {
+    height: 176px;
+    margin: 2px;
 }
 
 
 
-/*текст + картинка */
-main .article {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main article .text-and-photo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin-left: 50px;
-        margin-right: 50px;
-}
-
-main article .image-left-text {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        max-height: 250px;  
-}
-
-
-
-main #hurry-up {
+/*новий рік 2020 */
+main #new-year-2020 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #new-year-2020 p {
+    display: flex;
     text-align: center;
-    margin: 30px;
+    margin: 20px; /*поставити число*/
+}
+
+/* ADD none HR
+main #new-year-2020 .text-and-photo hr {
+    display: ; 
+}
+*/
+
+main #new-year-2020 img {
+    height: 250px;
+    margin: 20px;
 }
 
 
-
-@media (min-width: 700px) {
-    main article {
-        display: flex;
+@media (min-width: 750px) {
+    main #new-year-2020 {
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center; /*поміняти flex-end*/
-
     }
 
-    main article .text-and-photo {
-        flex-grow: 2; 
-        justify-content: flex-start;
+    main #new-year-2020 p {
         text-align: left;
-        margin-top: 0;
-        
-       
+        margin-right: 60px;
     }
-
-    main article .text-and-photo h1 {
-        text-align: left;
-        justify-content: flex-start;
-        margin-left: 0;
-    }
-
-    main article .image-left-text {
-        justify-content: flex-start;
-        margin-top: 0;
-        margin-right: 0; /*можна забрати*/
-       
-  
-    }  
 }
+
+/*   ADD HR
+@media (min-width: 850px) {
+    main #new-year-2020 .text-and-photo hr {
+        display: ;
+    }
+}*/
+
+
+/*вартість квитка*/
+
+main #price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #price li {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+main #price #for-children {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+main #price hr {
+    width: 600px;
+}
+
+main #price img {
+    height: 250px;
+    margin: 20px;
+}
+
+/*ще подивитися до абзаців*/
+main #hurry-up {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+
+
+@media (min-width: 800px) {
+    main #price {
+        flex-direction: row-reverse;
+    }
+
+    main #price li {
+        text-align: left;
+        margin-right: 80px;
+        margin-top: 0px;
+    }
+
+    main #price #for-children {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+
 
 /*блок "чому обрати"*/
 main #show-program {
@@ -194,6 +246,7 @@ main #show-program {
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px;
+    
 }
 
 main #show-program h3 {
@@ -221,14 +274,14 @@ main #show-program li {
 
 
 
+
 /*банер під годинник*/
 main .banner-countdown-timer {
     background-image: url(../img/happy-new-year-celebration.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 200px;
     margin-top: 10px;
@@ -239,10 +292,11 @@ main .banner-countdown-timer h3 {
     font-family: 'Oranienbaum', serif;
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
     color: white;
     align-self: center;
     margin-top: 0px;
-    margin-left: 50px;
+    margin-left: 0px;
     width: 20%;
 }
 
@@ -260,16 +314,28 @@ main .banner-countdown-timer h3 {
 
 
 /*контакти*/
+
+/*
 footer #contacts .container .contact-information {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    
 
+}
+*/
+
+footer #contacts .container .contact-information {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    
 }
 
 footer #contacts .container .contact-information h4 {
     color: var(--main-color);
+    display: none;
 }
 
 footer #contacts .container .contact-information h4:hover {
@@ -278,18 +344,137 @@ footer #contacts .container .contact-information h4:hover {
 
 footer #contacts .container .contact-information .icon img {
     width: 30px;
-    height: 30px;
+    height: 30px;  
 }
 
+footer #contacts .container .contact-information hr {
+    width: 600px;
+}
+
+@media (min-width: 550px) {
+    footer #contacts .container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+       
+    
+    }
+
+    footer #contacts .container .contact-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer #contacts .container .contact-information h4 {
+        display: flex;
+    }
+
+    footer #contacts .container .contact-information hr {
+        display: none;
+
+    }
+}
+
+
+/*
 @media (min-width: 550px) {
     footer #contacts .container {
         display: flex;
         justify-content: space-around;
     }    
-
+   
     footer #contacts .container .contact-information {
         flex-direction: column;
     }
+}*/
+
+
+
+
+
+
+/*карта*/
+
+
+
+
+
+/*форма*/
+footer #form {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #form h3 {
+    color: white;
+}
+
+footer #form h3:hover {
+    color: var(--accent-color);
 }
 
 
+
+/*копірайт+іконки*/
+footer #page-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+
+footer #page-bottom .links {
+    display:  grid;
+    grid-template-rows: 50% 50%;
+    list-style-type: none;
+    
+}
+
+
+footer #page-bottom li a .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;  
+    
+}
+
+footer #copyright p {
+    font-size: 0.8rem;
+}
+
+/*
+footer #page-bottom {
+   display: flex;
+   flex-direction: row;
+   flex: 1;
+ 
+}
+
+footer #page-bottom .links li {
+    display: flex;
+    
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+footer #page-bottom #copyright {
+    align-self: center;
+}
+
+
+@media (min-width: 600px) {
+    footer #page-bottom {
+        flex-direction: row-reverse;
+    }
+
+    footer #page-bottom #copyright {
+        align-self: flex-start;
+    }
+}   
+*/
