@@ -197,39 +197,27 @@
 
       <div class="map"></div>
 
-      <section id="form">
+      <section id="down">
         <h3>Надіслати запитання:</h3>
-        <form action="https://formspree.io/xlerwyqp" method="POST">
-          <input type="text" name="name" placeholder="Ім’я" /><br />
-          <input type="number" name="number" placeholder="Телефон" /><br />
-          <input
-            type="email"
-            name="email"
-            placeholder="Електронна пошта"
-          /><br />
-          <textarea
-            name="message"
-            rows="10"
-            cols="20"
-            placeholder="Введіть текст повідомлення"
-          ></textarea
-          ><br />
-          <input type="submit" value="ВІДПРАВИТИ" />
-        </form>
+        <div>
+          <form id="form" action="https://formspree.io/xlerwyqp" method="POST">
+             <input type="text" name="name" placeholder="Ім’я" />
+             <input type="number" name="number" placeholder="Телефон" />
+             <input type="email" name="email" placeholder="Електронна пошта"/>
+             <textarea name="message" rows="10" cols="20" placeholder="Введіть текст повідомлення"></textarea>
+             <input type="submit" value="ВІДПРАВИТИ" />
+          </form>
+        </div>
       </section>
       <div id="page-bottom">
-        <ul class="links">
-          <li>
-            <a href="http://www.facebook.com"><img src="img/facebook-logo.png" class="social-icon" alt="Логотип facebook"/></a>
-          </li>
-          <li>
-            <a href="http://www.instagram.com"><img src="img/instagram-logo.png" class="social-icon" alt="Логотип instagram"/></a>
-          </li>
-        </ul>
-       <div id="copyright">
-          <p>© Created by Ruslana Yusypiuk</p>
-       </div>
-    </div>
+          <div class="links">
+              <a href="http://www.facebook.com"><img src="img/facebook-logo.png" class="social-icon" alt="Логотип facebook"/></a>
+              <a href="http://www.instagram.com"><img src="img/instagram-logo.png" class="social-icon" alt="Логотип instagram"/></a>
+          </div>  
+          <div id="copyright">
+              <p>© Created by Ruslana Yusypiuk</p>
+          </div>
+      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

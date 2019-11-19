@@ -196,6 +196,16 @@ main #price li {
     margin-top: 20px;
 }
 
+main #price #devide-line {
+    margin-top: 1px;
+    padding-top: 10px;
+    border-top: 2px solid; 
+    width: 600px;
+
+}
+
+  
+
 main #price #for-children {
     margin-top: 10px;
     margin-left: 50px;
@@ -228,12 +238,6 @@ main #hurry-up {
         text-align: left;
         margin-right: 80px;
         margin-top: 0px;
-    }
-
-    main #price #for-children {
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
     }
 }
 
@@ -272,7 +276,13 @@ main #show-program li {
   
 }
 
-
+    /*  зробити гарну лінію
+    main #price #for-children {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    */
 
 
 /*банер під годинник*/
@@ -328,9 +338,13 @@ footer #contacts .container .contact-information {
 
 footer #contacts .container .contact-information {
     display: grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 150px 1fr 5fr 150px;
     grid-template-rows: 25% 25% 25% 25%;
-    
+    justify-items: center;
+}
+
+footer #contacts .container .contact-information p {
+    grid-area: 2 / 2 / 2 / 2;
 }
 
 footer #contacts .container .contact-information h4 {
@@ -343,6 +357,7 @@ footer #contacts .container .contact-information h4:hover {
 }
 
 footer #contacts .container .contact-information .icon img {
+    grid-area: 1 / 1 / 1 / 1;
     width: 30px;
     height: 30px;  
 }
@@ -350,6 +365,11 @@ footer #contacts .container .contact-information .icon img {
 footer #contacts .container .contact-information hr {
     width: 600px;
 }
+
+footer #contacts .container .contact-information p {
+    width: auto;
+}
+
 
 @media (min-width: 550px) {
     footer #contacts .container {
@@ -400,22 +420,33 @@ footer #contacts .container .contact-information hr {
 
 
 /*форма*/
-footer #form {
+footer #down {
+    background-color: var(--main-color);
     margin-top: 30px;
     padding: 30px;
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-footer #form h3 {
+
+footer #down h3 {
     color: white;
+    text-align: center;
+    font-weight: normal;
 }
 
 footer #form h3:hover {
     color: var(--accent-color);
 }
+
+footer #form {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
@@ -428,14 +459,12 @@ footer #page-bottom {
 }
 
 footer #page-bottom .links {
-    display:  grid;
-    grid-template-rows: 50% 50%;
-    list-style-type: none;
+    display:  flex;
     
 }
 
 
-footer #page-bottom li a .social-icon {
+footer #page-bottom .links .social-icon {
     width: 30px;
     height: 30px;
     margin: 5px;  
@@ -445,6 +474,20 @@ footer #page-bottom li a .social-icon {
 footer #copyright p {
     font-size: 0.8rem;
 }
+
+@media (min-width: 550px) {
+    footer #page-bottom {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    footer #copyright p{
+        align-self: flex-start;
+    }
+}
+
+
 
 /*
 footer #page-bottom {
