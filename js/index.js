@@ -1,5 +1,6 @@
-const countDownDate = new Date ("Dec 31, 2019 00:00:00").getTime();
-const x = setInterval(function() {
+//countdown timer
+const countDownDate = new Date ("Jan 1, 2020 00:00:00").getTime();
+const intervalId = setInterval(function() {
   const now = new Date().getTime();
   let distance = countDownDate - now;
     
@@ -14,6 +15,8 @@ const x = setInterval(function() {
   document.getElementById("seconds").innerHTML = seconds;
  
   if (distance <= 0) {
-    clearInterval(x);
+    clearInterval(intervalId);
   }
 }, 1000);
+
+

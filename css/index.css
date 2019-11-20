@@ -287,53 +287,36 @@ main .banner-countdown-timer {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    /*align-items: flex-start;*/
-  
+    justify-content: space-between;
     min-height: 200px;
     margin-top: 0px;
     margin-bottom: 30px;
+    padding: 20px;
 }
 
 
 main .banner-countdown-timer h3 {
     font-family: 'Oranienbaum', serif;
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
     text-align: center;
-    margin-top: 20px;
-    /*align-self: center;
-    
-    margin-left: 0px;
-    width: 20%;
-    */
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: normal;
 }
 
-@media (min-width: 550px) {
-    main .banner-countdown-timer {
-        display: flex;
-        min-height: 500px;
-    }
-
-    main .banner-countdown-timer h3 {
-        font-size: 1.3rem;
-        width: 30%;
-    }
+main .banner-countdown-timer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
 }
 
-
-
-
-.container {
-    display: inline-block;
-    align-items: center;
-}
-
-.count {
+main .banner-countdown-timer .container .count {
     margin: 40px 0;
 }
 
-.countd {
+main .banner-countdown-timer .container .count .countd {
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -344,17 +327,22 @@ main .banner-countdown-timer h3 {
     overflow: hidden;
     color: white;
     text-align: center;
+    font-family:'Oranienbaum', serif;
 }
 
-.countd span {
+main .banner-countdown-timer .container .count .countd span {
     display: block;
     font-size: 26px;
     margin-top: 14px;
     color: white;
-
 }
 
-
+@media (min-width: 550px) {
+    main .banner-countdown-timer {
+        display: flex;
+        min-height: 500px;
+    }
+}
 
 
 
