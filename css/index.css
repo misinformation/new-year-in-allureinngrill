@@ -196,21 +196,15 @@ main #price li {
     margin-top: 20px;
 }
 
+/* передивитися чи потрібно
 main #price #devide-line {
     margin-top: 1px;
     padding-top: 10px;
     border-top: 2px solid; 
     width: 600px;
-
 }
+*/
 
-  
-
-main #price #for-children {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 main #price hr {
     width: 600px;
 }
@@ -286,28 +280,33 @@ main #show-program li {
 
 
 /*банер під годинник*/
+
 main .banner-countdown-timer {
     background-image: url(../img/happy-new-year-celebration.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+  
     min-height: 200px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 30px;
 }
+
 
 main .banner-countdown-timer h3 {
     font-family: 'Oranienbaum', serif;
     font-size: 1rem;
     text-transform: uppercase;
-    text-align: center;
     color: white;
-    align-self: center;
-    margin-top: 0px;
+    text-align: center;
+    margin-top: 20px;
+    /*align-self: center;
+    
     margin-left: 0px;
     width: 20%;
+    */
 }
 
 @media (min-width: 550px) {
@@ -323,10 +322,47 @@ main .banner-countdown-timer h3 {
 }
 
 
+
+
+.container {
+    display: inline-block;
+    align-items: center;
+}
+
+.count {
+    margin: 40px 0;
+}
+
+.countd {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    margin: 0 30px;
+    font-size: 12px;
+    border-radius: 5%;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.countd span {
+    display: block;
+    font-size: 26px;
+    margin-top: 14px;
+    color: white;
+
+}
+
+
+
+
+
+
 /*контакти*/
 
 /*
-footer #contacts .container .contact-information {
+footer #contacts .contact-container .contact-information {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -336,74 +372,73 @@ footer #contacts .container .contact-information {
 }
 */
 
-footer #contacts .container .contact-information {
+footer #contacts .contact-container .contact-information {
     display: grid;
     grid-template-columns: 150px 1fr 5fr 150px;
     grid-template-rows: 25% 25% 25% 25%;
     justify-items: center;
 }
 
-footer #contacts .container .contact-information p {
+footer #contacts .contact-container .contact-information p {
     grid-area: 2 / 2 / 2 / 2;
 }
 
-footer #contacts .container .contact-information h4 {
+footer #contacts .contact-container .contact-information h4 {
     color: var(--main-color);
     display: none;
 }
 
-footer #contacts .container .contact-information h4:hover {
+footer #contacts .contact-container .contact-information h4:hover {
     color: var(--accent-color);
 }
 
-footer #contacts .container .contact-information .icon img {
+footer #contacts .contact-container .contact-information .icon img {
     grid-area: 1 / 1 / 1 / 1;
     width: 30px;
     height: 30px;  
 }
 
-footer #contacts .container .contact-information hr {
+footer #contacts .contact-container .contact-information hr {
     width: 600px;
 }
 
-footer #contacts .container .contact-information p {
+footer #contacts .contact-container .contact-information p {
     width: auto;
 }
 
 
 @media (min-width: 550px) {
-    footer #contacts .container {
+    footer #contacts .contact-container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
        
     
     }
 
-    footer #contacts .container .contact-information {
+    footer #contacts .contact-container .contact-information {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    footer #contacts .container .contact-information h4 {
+    footer #contacts .contact-container .contact-information h4 {
         display: flex;
     }
 
-    footer #contacts .container .contact-information hr {
+    footer #contacts .contact-container .contact-information hr {
         display: none;
-
     }
 }
 
 
 /*
 @media (min-width: 550px) {
-    footer #contacts .container {
+    footer #contacts .contact-container {
         display: flex;
         justify-content: space-around;
     }    
    
-    footer #contacts .container .contact-information {
+    footer #contacts .contact-container .contact-information {
         flex-direction: column;
     }
 }*/
