@@ -172,6 +172,8 @@ main #new-year-2020 img {
         text-align: left;
         margin-right: 60px;
     }
+
+
 }
 
 /*   ADD HR
@@ -180,6 +182,7 @@ main #new-year-2020 img {
         display: ;
     }
 }*/
+
 
 
 /*вартість квитка*/
@@ -209,6 +212,7 @@ main #price hr {
     width: 600px;
 }
 
+
 main #price img {
     height: 250px;
     margin: 20px;
@@ -234,6 +238,9 @@ main #hurry-up {
         margin-top: 0px;
     }
 }
+
+
+
 
 
 
@@ -267,16 +274,10 @@ main #show-program li {
     color: white;
     padding-top: 1em;
     margin-right: 20px;
-  
 }
 
-    /*  зробити гарну лінію
-    main #price #for-children {
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    */
+   
+
 
 
 /*банер під годинник*/
@@ -345,30 +346,21 @@ main .banner-countdown-timer .container .count .countd span {
 }
 
 
-
-
 /*контакти*/
 
-/*
-footer #contacts .contact-container .contact-information {
+footer #contacts .contact-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    
-
-}
-*/
-
-footer #contacts .contact-container .contact-information {
-    display: grid;
-    grid-template-columns: 150px 1fr 5fr 150px;
-    grid-template-rows: 25% 25% 25% 25%;
-    justify-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 30px;
 }
 
-footer #contacts .contact-container .contact-information p {
-    grid-area: 2 / 2 / 2 / 2;
+footer #contacts .contact-container .contact-information .icon img {
+    width: 30px;
+    height: 30px;
+    margin: 20px;  
 }
 
 footer #contacts .contact-container .contact-information h4 {
@@ -376,60 +368,36 @@ footer #contacts .contact-container .contact-information h4 {
     display: none;
 }
 
-footer #contacts .contact-container .contact-information h4:hover {
-    color: var(--accent-color);
-}
-
-footer #contacts .contact-container .contact-information .icon img {
-    grid-area: 1 / 1 / 1 / 1;
-    width: 30px;
-    height: 30px;  
-}
-
-footer #contacts .contact-container .contact-information hr {
-    width: 600px;
-}
-
-footer #contacts .contact-container .contact-information p {
-    width: auto;
-}
-
-
-@media (min-width: 550px) {
+@media (min-width: 700px) {
     footer #contacts .contact-container {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-       
-    
+        display: flex;
+        flex-direction: row;
     }
 
     footer #contacts .contact-container .contact-information {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    footer #contacts .contact-container .contact-information p  {
+        font-size: 80%;
     }
 
     footer #contacts .contact-container .contact-information h4 {
+        font-size: 1rem;
         display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
-    footer #contacts .contact-container .contact-information hr {
-        display: none;
+    footer #contacts .contact-container .contact-information .icon img {
+        margin: 0px; 
     }
 }
 
+    
+  
 
-/*
-@media (min-width: 550px) {
-    footer #contacts .contact-container {
-        display: flex;
-        justify-content: space-around;
-    }    
-   
-    footer #contacts .contact-container .contact-information {
-        flex-direction: column;
-    }
-}*/
 
 
 
@@ -445,10 +413,9 @@ footer #contacts .contact-container .contact-information p {
 /*форма*/
 footer #down {
     background-color: var(--main-color);
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 30px;
 }
-
 
 footer #down h3 {
     color: white;
