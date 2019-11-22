@@ -217,18 +217,22 @@
         </div>
       </section>
 
-      <div class="map"></div>
-
+      
       <section id="down">
         <h3>Надіслати запитання:</h3>
         <div>
           <form id="form" action="https://formspree.io/xlerwyqp" method="POST">
+             <div>
              <input type="text" name="name" placeholder="Ім’я" />
              <input type="number" name="number" placeholder="Телефон" />
-             <input type="email" name="email" placeholder="Електронна пошта"/>
+             <input type="email" name="email" placeholder="Електронна пошта"/>          
              <textarea name="message" rows="10" cols="20" placeholder="Введіть текст повідомлення"></textarea>
-             <input type="submit" value="ВІДПРАВИТИ" />
+             </div>
+             <div>
+               <input class="button" type="submit" value="ВІДПРАВИТИ" />
+             </div> 
           </form>
+          
         </div>
       </section>
       <div id="page-bottom">

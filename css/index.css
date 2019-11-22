@@ -277,6 +277,12 @@ main #hurry-up {
 .type-writer {
     display: flex;
     justify-content: center;
+    font-weight: normal;
+    margin-top: 20px; 
+}
+
+.type-writer h1 {
+    font-size: 1rem;
 }
 
 /* Cursor */
@@ -284,7 +290,17 @@ main #hurry-up {
     border-right: 0.2rem solid var(--accent-color);
 }
 
+@media (min-width: 500px) {
+    .type-writer h1 {
+        font-size: 1.5rem;
+    } 
+}
 
+@media (min-width: 600px) {
+    .type-writer h1 {
+        font-size: 2rem;
+    } 
+}
 
 
 /*блок "чому обрати"*/
@@ -436,7 +452,6 @@ footer #contacts .contact-container .contact-information h4 {
     }
 }
 
-/*карта*/
 
 /*форма*/
 footer #down {
@@ -451,21 +466,67 @@ footer #down h3 {
     font-weight: normal;
 }
 
-footer #form h3:hover {
+footer #down h3:hover {
     color: var(--accent-color);
 }
 
-footer #form {
-    margin-top: 30px;
+footer #down #form {
+    margin-top: 0px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
+footer #down #form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc);
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+}
 
+footer #down #form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color:white;
+  resize: none;
+  font-family: 'Rubik', sans-serif;
+}
 
+ .button {
+    width: 50%;
+    background-color:maroon;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  color: black;
+  border: 2px solid maroon;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  
+}
+
+@media(min-width: 700px) {
+    footer #down #form {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 /*копірайт+іконки*/
