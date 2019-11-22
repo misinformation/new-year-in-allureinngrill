@@ -4,19 +4,13 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     speed: 300,
-    //slidesToShow: 3,
-    //slidesToScroll: 3,
-    //centerMode: true,
+    centerMode: true,
     variableWidth: true,
-
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-
   });
 });
-
-
 
 
 //Tipe Writer Effect

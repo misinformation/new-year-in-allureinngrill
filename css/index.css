@@ -76,7 +76,7 @@ header nav .menu li {
         padding: 10px;
     }
 }
-/*подивитися до лого*/
+
 
 /*банер*/
 header .banner {
@@ -137,24 +137,6 @@ main .gallery img {
     padding: 4px;
 }
 
-/*
-main #gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;;
-    margin: 0;
-}
-
-main #gallery img {
-    height: 176px;
-    margin: 2px;
-}
-/*
-
-
-
-
 
 /*новий рік 2020 */
 main #new-year-2020 {
@@ -189,48 +171,6 @@ main #new-year-2020 p {
 }
 
 
-/*
-main #new-year-2020 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-main #new-year-2020 p {
-    display: flex;
-    text-align: center;
-    margin: 20px;
-}
-
-
-main #new-year-2020 img {
-    height: 250px;
-    margin: 20px;
-}
-
-
-@media (min-width: 750px) {
-    main #new-year-2020 {
-        flex-direction: row-reverse;
-    }
-
-    main #new-year-2020 p {
-        text-align: left;
-        margin-right: 60px;
-    }
-
-
-}
-
-*/
-
-
-
-
-
-
-
 /*вартість квитка*/
 main #price {
     display: flex;
@@ -250,17 +190,6 @@ main #price li {
 }
 
 
-
-/*
-.border {
-    border: none;
-    border-bottom: 2px solid var(--accent-color);
-}
-*/
-
-
-
-
 main #price img {
     width: 100%;
 }
@@ -278,11 +207,6 @@ main #price img {
         text-align: left;
     }
 }
-
-
-
-
-
 
 
 main #hurry-up {
