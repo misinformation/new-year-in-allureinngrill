@@ -132,7 +132,6 @@ h1:hover {
 
 
 /*галерея*/
-
 main .gallery img {
     max-height: 250px;
     padding: 4px;
@@ -163,7 +162,10 @@ main #new-year-2020 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
+
+
 
 main #new-year-2020 img {
     width: 100%;
@@ -173,6 +175,17 @@ main #new-year-2020 p {
     margin-left:20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+@media (min-width: 750px) {
+    main #new-year-2020 {
+        flex-direction: row-reverse;
+    }
+
+    main #new-year-2020 p {
+        text-align: left;
+        margin-right: 60px;
+    }
 }
 
 
@@ -224,44 +237,51 @@ main #price {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-main #price img {
-    width: 100%;
-}
-
-
-/*
-main #price {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 main #price li {
     text-align: center;
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 0px; /*20px*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 60px; 
 }
+
+
+
+/*
+.border {
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+}
+*/
+
+
+
 
 main #price img {
-    height: 250px;
-    margin: 20px;
+    width: 100%;
 }
 
-
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     main #price {
         flex-direction: row-reverse;
     }
 
+    main #price img {
+       max-width: 500px;
+    }    
+
     main #price li {
         text-align: left;
-        margin-right: 80px;
-        margin-top: 0px;
     }
 }
-*/
+
+
+
+
 
 
 
